@@ -46,11 +46,10 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Push to Docker
-        uses: |
-          cd api_yamdb
-          docker/build-push-action@v2
+        uses: docker/build-push-action@v2
         with:
           push: true
+          context: ./api_yamdb
           tags: levkovv/api_yamdb:latest
 
 
