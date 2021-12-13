@@ -70,6 +70,7 @@ class ReviewViewSet(viewsets.ModelViewSet):
         )
         if title is not None:
             return title.reviews.all()
+        return None
 
     def perform_create(self, serializer):
         title = get_object_or_404(Title, id=self.kwargs['title_id'])
