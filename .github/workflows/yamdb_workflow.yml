@@ -47,9 +47,9 @@ build_and_push_to_docker_hub:
 
     - name: Push to Docker
       uses: docker/build-push-action@v2
-        with:
-          push: true
-          tags: levkovv/api_yamdb:latest
+      with:
+        push: true
+        tags: levkovv/api_yamdb:latest
 
 
 
