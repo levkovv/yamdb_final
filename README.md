@@ -57,3 +57,5 @@ http://localhost/redoc/
 1. Добавить нового пользователя. Отправить POST-запрос с параметрами ```email``` и ```username``` на эндпоинт ```/api/v1/auth/signup```
 2. Сервис отправляет письмо с кодом подтверждения (```confirmation_code```) на указанный адрес ```email``` (на данном этапе письмо появится в папке ```sent_emails```)
 3. Пользователь отправляет POST-запрос с параметрами ```username``` и ```confirmation_code``` на эндпоинт ```/api/v1/auth/token/```, в ответе на запрос ему приходит JWT-токен
+
+![example workflow](https://github.com/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
