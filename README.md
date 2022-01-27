@@ -1,6 +1,5 @@
 # api_yamdb
 
-![example workflow](https://github.com/levkovv/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
 ## Описание проекта
 Командный учебный проект написанный в рамках обучения в Яндекс.Практикум.
@@ -60,6 +59,4 @@ http://localhost/redoc/
 2. Сервис отправляет письмо с кодом подтверждения (```confirmation_code```) на указанный адрес ```email``` (на данном этапе письмо появится в папке ```sent_emails```)
 3. Пользователь отправляет POST-запрос с параметрами ```username``` и ```confirmation_code``` на эндпоинт ```/api/v1/auth/token/```, в ответе на запрос ему приходит JWT-токен
 
-### Развернутое приложение доступно по адресу
-http://51.250.21.16
 
